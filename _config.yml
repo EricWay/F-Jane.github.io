@@ -1,44 +1,41 @@
-title: Your awesome title
-email: your-email@domain.com
-description: description
-baseurl: 
-url: "https://f-jane.github.io"
-twitter_username: joshuaavalon
-github_username:  joshuaavalon
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-sass:
-  style: compressed
+# Site settings
 
-paginate: 12
-paginate_path: "/:num/"
+#网站名称
+title: 小河马啊小河马
 
-author_img_s: /img/author_s.png
-author_img: /img/author.png
+#email地址
+email: weirenkui@foxmail.com
 
-navigation:
-  - text: Home
-    url: /
-  - text: Categories
-    url: /categories.html
-  - text: Tags
-    url: /tags.html
+#描述
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-read_more: Read More
-env: production
-minify_html: false # Set to true only when it is production. Increase significant build time.
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "https://f-jane.github.io" # the base hostname & protocol for your site
+
+twitter_username:  
+github_username:  EricWay
+weibo_username: yizuochengchi0528/home
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 
-sticky: sticky # Tag used for sticky post
-sticky_count: 3 # Number of sticky post shown
+# Third-party services
+# just leave someone empty to disable it
+# google_analytics: 
+disqus_shortname:
 
-gems:
-  - jekyll-paginate
-  - jekyll-feed
-  
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
+# used this for post_excerpt at index_page
+excerpt_separator: <!--description-->
